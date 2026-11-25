@@ -1,0 +1,7 @@
+# Ignore PDFs, archives, source notes folder, and environment files
+*.pdf
+*.PDF
+*.zip
+PYQandNotes.zip
+PYQandNotes/
+.env

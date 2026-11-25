@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>21CSC301T — Formal Language and Automata | Lesson-Wise Important Questions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#overview" class="brand" data-section="overview">
+        <span class="brand-code">21CSC301T</span>
+        <span class="brand-name">FLA Exam Prep</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <button class="nav-btn active" data-section="overview">Overview</button>
+        <button class="nav-btn" data-section="lesson-wise">Lesson-Wise Questions</button>
+        <button class="nav-btn" data-section="eight-mark">8-Mark Questions</button>
+        <button class="nav-btn" data-section="sixteen-mark">16-Mark Questions</button>
+        <button class="nav-btn" data-section="most-repeated">Most Repeated Questions</button>
+        <button class="nav-btn" data-section="revision">Last-Minute Revision</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Filter & Study Toolbar (visible on question sections) -->
+    <section class="toolbar hidden" id="toolbar" aria-label="Question filters and actions">
+      <div class="toolbar-row">
+        <div class="search-box">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search questions, topics, concepts, or years (e.g., GNF, PDA, 2025)..."
+            aria-label="Search questions"
+          />
+        </div>
+
+        <div class="select-group">
+          <select id="priorityFilter" aria-label="Filter by priority">
+            <option value="ALL">All Priorities</option>
+            <option value="VERY HIGH">Very High Priority</option>
+            <option value="HIGH">High Priority</option>
+            <option value="MEDIUM">Medium Priority</option>
+          </select>
+
+          <select id="sourceFilter" aria-label="Filter by source type">
+            <option value="ALL">All Sources</option>
+            <option value="Exact PYQ">Exact PYQ</option>
+            <option value="Rephrased Repeated PYQ">Rephrased Repeated PYQ</option>
+            <option value="Lesson-Based Important">Lesson-Based Important</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="toolbar-row toolbar-secondary">
+        <div class="lesson-pills" id="lessonPills" role="group" aria-label="Filter by lesson">
+          <button class="pill active" data-lesson="ALL">All Lessons</button>
+          <button class="pill" data-lesson="1">Lesson 1</button>
+          <button class="pill" data-lesson="2">Lesson 2</button>
+          <button class="pill" data-lesson="3">Lesson 3</button>
+          <button class="pill" data-lesson="4">Lesson 4</button>
+          <button class="pill" data-lesson="5">Lesson 5</button>
+        </div>
+
+        <div class="action-buttons">
+          <button class="tool-btn" id="bookmarkFilterBtn" type="button" title="Show bookmarked questions only">
+            ★ Bookmarked (<span id="bookmarkCount">0</span>)
+          </button>
+          <button class="tool-btn" id="hideCompletedBtn" type="button" title="Hide completed questions">
+            Hide Completed
+          </button>
+          <button class="tool-btn" id="expandAllBtn" type="button">Expand All</button>
+          <button class="tool-btn" id="collapseAllBtn" type="button">Collapse All</button>
+          <button class="tool-btn tool-btn-primary" id="printBtn" type="button">Print</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. OVERVIEW SECTION -->
+    <section class="page-section active" id="section-overview"></section>
+
+    <!-- 2. LESSON-WISE QUESTIONS SECTION -->
+    <section class="page-section" id="section-lesson-wise"></section>
+
+    <!-- 3. 8-MARK QUESTIONS SECTION -->
+    <section class="page-section" id="section-eight-mark"></section>
+
+    <!-- 4. 16-MARK QUESTIONS SECTION -->
+    <section class="page-section" id="section-sixteen-mark"></section>
+
+    <!-- 5. MOST REPEATED QUESTIONS SECTION -->
+    <section class="page-section" id="section-most-repeated"></section>
+
+    <!-- 6. LAST-MINUTE REVISION SECTION -->
+    <section class="page-section" id="section-revision"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>
+        <strong>21CSC301T — Formal Language and Automata</strong> · Prepared from 6 University PYQs (May 2024 – Jul 2025) &amp; Official Unit Notes.
+      </p>
+      <p class="footer-sub">Bookmarks and completion status are saved locally in your browser.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
